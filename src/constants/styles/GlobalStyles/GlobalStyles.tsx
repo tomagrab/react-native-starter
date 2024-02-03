@@ -18,7 +18,7 @@ export const colorScheme = {
 };
 
 export const GlobalStyles = StyleSheet.create({
-  // Handle Centering
+  // Handle justify and align
   center_all: {
     alignItems: "center",
     justifyContent: "center",
@@ -28,8 +28,28 @@ export const GlobalStyles = StyleSheet.create({
     alignItems: "center",
   },
 
+  align_start: {
+    alignItems: "flex-start",
+  },
+
+  align_end: {
+    alignItems: "flex-end",
+  },
+
   justify_center: {
     justifyContent: "center",
+  },
+
+  justify_start: {
+    justifyContent: "flex-start",
+  },
+
+  justify_end: {
+    justifyContent: "flex-end",
+  },
+
+  justify_between: {
+    justifyContent: "space-between",
   },
 
   // Handle Positioning
@@ -41,13 +61,29 @@ export const GlobalStyles = StyleSheet.create({
     position: "relative",
   },
 
-  // Handle Flex Direction
+  // Handle Flex
   flex_row: {
     flexDirection: "row",
   },
 
   flex_col: {
     flexDirection: "column",
+  },
+
+  flex_wrap: {
+    flexWrap: "wrap",
+  },
+
+  flex_nowrap: {
+    flexWrap: "nowrap",
+  },
+
+  flex_grow: {
+    flexGrow: 1,
+  },
+
+  flex_shrink: {
+    flexShrink: 1,
   },
 
   // Handle Width
@@ -203,6 +239,21 @@ export const GlobalStyles = StyleSheet.create({
 
   text_10xl: {
     fontSize: 52,
+  },
+
+  h1: {
+    fontSize: 32,
+    fontWeight: "bold",
+  },
+
+  h2: {
+    fontSize: 24,
+    fontWeight: "bold",
+  },
+
+  h3: {
+    fontSize: 20,
+    fontWeight: "bold",
   },
 
   // Handle Margin and Padding
@@ -2151,5 +2202,19 @@ export const GlobalStyles = StyleSheet.create({
 
   pink_900: {
     color: "#831843",
+  },
+
+  // Handle Generic Components
+  input: {
+    padding: 10,
+    borderWidth: 1,
+    borderColor: "#000",
+    borderRadius: 5,
+  },
+
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
   },
 });
